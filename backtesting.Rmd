@@ -410,7 +410,7 @@ strategy.st <- add.rule(strategy.st, name = "ruleSignal",
                           orderqty = "all", ordertype = "market",
                           orderside = "long", replace = FALSE,
                           prefer = "Open"),
-         type = "exit")
+         type = "enter")
 ```
 
 ```{r, eval=T}
@@ -419,7 +419,7 @@ strategy.st <-
            arguments = list(sigcol = "MACD_below_Signal", sigval = TRUE, 
                             orderqty = 1000, ordertype = "market",
                             orderside = "long", prefer="Open", replace = FALSE), 
-           type = "enter")
+           type = "exit")
 ```
 
 
